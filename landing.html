@@ -46,16 +46,6 @@ body, html {
   backface-visibility: hidden;
 }
 
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
-}
-
 .w3-col :hover .image {
   opacity: 0.3;
 }
@@ -63,14 +53,6 @@ body, html {
 .w3-col :hover .middle {
   opacity: 1;
 }
-
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
 
 </style>
 <body>
@@ -129,8 +111,8 @@ body, html {
 <!-- About Section -->
 <div class="w3-container" style="padding:100px 16px" id="about">
   <h3 class="w3-center">ABOUT THE COMPANY</h3>
-    <p style="text-align:center;margin-left: 70px;margin-right: 70px;">We at Smart Farmer believe in providing cutting edge technological solutions to our customer's farming needs. Maintaining the accuracy of our equipments is our top priority and so is customer satisfaction. We provide a wide range of products ranging from basic equipment for low scale produce to high end products suitable for large scale produce. Maintaining high quality and reasonable pricing us helps us stand apart from the rest of the IOT-based manufacturers.<br>Since the inception of the organization in 2001, we have grown rapidly by focusing mainly on innovation and accuracy. We have over 3000 happy customers spanning across five states. We also organise frequent camps in rural areas to educate farmers about sustainable farming methods. We also fund research project in the field of IOT. That's our way of giving back to the society.</p>
-  <p class="w3-center w3-large" style="font-weight: bold;">Key features of our company</p>
+    <p style="text-align:center;margin-left: 70px;margin-right: 70px;">We, at Smart Farmer, believe in providing cutting edge technological solutions to our customer's farming needs. Maintaining the accuracy of our equipments is our top priority and so is customer satisfaction. We provide a wide range of products ranging from basic equipment for low scale produce to high end products suitable for large scale produce. Maintaining high quality and reasonable pricing us helps us stand apart from the rest of the IOT-based manufacturers.<br>Since the inception of the organization in 2001, we have grown rapidly by focusing mainly on innovation and accuracy. We have over 3000 happy customers spanning across five states. We also organise frequent camps in rural areas to educate farmers about sustainable farming methods. We also fund research project in the field of IOT. That's our way of giving back to the society.</p><br><br><hr>
+  <h3 class="w3-center w3-large" style="font-weight: bold;">Key features of our company</h3>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
       <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
@@ -155,12 +137,12 @@ body, html {
   </div>
 </div>
 
-<!-- Promo Section - "We know design" -->
+<!-- Promo Section - "We believe in our products" -->
 <div class="w3-container w3-light-grey" style="padding:100px 16px">
   <div class="w3-row-padding">
     <div class="w3-col m6">
-      <h3>We know design.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+      <h3>We believe in our products.</h3>
+      <p>We have designed these products especially for the welfare of the farmers.<br>Intense detailing and alluring design.<br></p>
       <p><a href="#products" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Products</a></p>
     </div>
     <div class="w3-col m6">
@@ -170,22 +152,20 @@ body, html {
 </div>
 
 <!-- IoT Section -->
-<div class="w3-container" style="padding:100px 16px" id="iot">
+<div class="w3-container w3-light-grey" style="padding:100px 16px" id="iot">
   <h3 style="margin-left: 70px;">IoT In Agriculture</h3>
     <div class="row">
-    <div class="column" style="background-color: beige; padding-top: 10%; padding-bottom: 10%;" >
-    <p style="margin-left: 70px; margin-top: 20px;margin-right: 730px;">IoT has the capability to influence the world we live in; advanced industries, connected vehicles, and smarter cities are all components of the IoT equation. However, applying technology like IoT to the agriculture industry could have the greatest impact.
-    Smart farming based on IoT technologies will enable growers and farmers to reduce waste and enhance productivity ranging from the quantity of fertilizer utilized to the number of journeys the farm vehicles have made.
-    <br><br>
-    So, what is smart farming? Smart farming is a capital-intensive and hi-tech system of growing food cleanly and sustainable for the masses. It is the application of modern ICT (Information and Communication Technologies) into agriculture.<br><br>In IoT-based smart farming, a system is built for monitoring the crop field with the help of sensors (light, humidity, temperature, soil moisture, etc.) and automating the irrigation system. The farmers can monitor the field conditions from anywhere. IoT-based smart farming is highly efficient when compared with the conventional approach.<br>In terms of environmental issues, IoT-based smart farming can provide great benefits including more efficient water usage, or optimization of inputs and treatments. Now, let’s discuss the major applications of IoT-based smart farming that are revolutionizing agriculture.</p>
+    <div class="column">
+    <p style="margin-left: 70px;margin-right: 600px;">IoT has the capability to influence the world we live in; advanced industries, connected vehicles, and smarter cities are all components of the IoT equation. However, applying technology like IoT to the agriculture industry could have the greatest impact.<br>
+        <br>So, what is smart farming?<br>Smart farming is a capital-intensive and hi-tech system of growing food cleanly and sustainable for the masses. It is the application of modern ICT (Information and Communication Technologies) into agriculture.<br>Five ways IOT can improve agriculture:<ul style="margin-left: 70px;"><li>Data, tons of data, collected by smart agriculture sensors</li><li>Better control over the internal processes and, as a result, lower production risks</li><li>Cost management and waste reduction thanks to the increased control over the production</li><li>Increased business efficiency through process automation</li><li>Enhanced product quality and volumes</li></ul>
+        </p>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="Images/iot_in_agri.jpg" style="margin-left: 720px;margin-top: -600px;" alt="IoT"  height="250">
+      <img class="w3-image w3-round-large" src="Images/iot_in_agri.jpg" style="margin-left: 800px;margin-top: -500px;" alt="IoT" width="500" height="194">
     </div>    
     </div>
 
 </div>
-
 
 <!-- Promo Section "Statistics" -->
 <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
@@ -336,7 +316,7 @@ body, html {
       <div class="w3-card">
         <!-- <img src="/w3images/team2.jpg" alt="Ananth Koppar" style="width:100%"> -->
         <div class="w3-container">
-          <h3>Ananth Koppar</h3>
+          <h3>Dr. Ananth Koppar</h3>
           <p class="w3-opacity">KM Experts</p>
           
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
@@ -347,7 +327,7 @@ body, html {
       <div class="w3-card">
         <!-- <img src="/w3images/team1.jpg" alt="Mamatha Shetty" style="width:100%"> -->
         <div class="w3-container">
-          <h3>Mamtha Shetty</h3>
+          <h3>Dr. Mamtha Shetty</h3>
           <p class="w3-opacity">KM Experts</p>
 
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
