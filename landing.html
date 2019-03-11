@@ -3,36 +3,30 @@
 <title>IoT in Agriculture</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
 body, html {
   height: 100%;
   line-height: 1.8;
-
 }
-
 .grey-background{
   background-color: #76987B; 
-
 }
-
 .pr_column {
   float: left;
   width: 33.33%;
   padding: 5px;
 }
-
 /* Clearfix (clear floats) */
 .pr_row::after {
   content: "";
   clear: both;
   display: table;
 }
-
 /* Full height image header */
 .bgimg-1 {
   background-position: center;
@@ -40,10 +34,44 @@ body, html {
   background-image: url("Images/landing.jpg");
   min-height: 100%;
 }
-
 .w3-bar .w3-button {
   padding: 16px;
 }
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.w3-col :hover .image {
+  opacity: 0.3;
+}
+
+.w3-col :hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
 </style>
 <body>
 
@@ -59,7 +87,6 @@ body, html {
       <a href="#dept" class="w3-bar-item w3-button"><i class="fa fa-th"></i> DEPARTMEMTS</a>
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-      <a href="experts.html" class="w3-bar-item w3-button"></i> EXPERTS</a>
       <a href="login.html" class="w3-bar-item w3-button"><span id="log">LOG IN</span></a> 
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -134,7 +161,7 @@ body, html {
     <div class="w3-col m6">
       <h3>We know design.</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
-      <p><a href="#products" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Products</a></p>
+      <p><a href="#products" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Products</a></p>
     </div>
     <div class="w3-col m6">
       <img class="w3-image w3-round-large" src="Images/about.jpg" alt="IoT" width="700" height="394">
@@ -146,7 +173,7 @@ body, html {
 <div class="w3-container" style="padding:100px 16px" id="iot">
   <h3 style="margin-left: 70px;">IoT In Agriculture</h3>
     <div class="row">
-    <div class="column" style="background-color: beige; padding-top: 10px; padding-bottom: 10px;" >
+    <div class="column" style="background-color: beige; padding-top: 10%; padding-bottom: 10%;" >
     <p style="margin-left: 70px; margin-top: 20px;margin-right: 730px;">IoT has the capability to influence the world we live in; advanced industries, connected vehicles, and smarter cities are all components of the IoT equation. However, applying technology like IoT to the agriculture industry could have the greatest impact.
     Smart farming based on IoT technologies will enable growers and farmers to reduce waste and enhance productivity ranging from the quantity of fertilizer utilized to the number of journeys the farm vehicles have made.
     <br><br>
@@ -207,7 +234,49 @@ body, html {
 </div>
 
 <!-- Department Section -->
-<!-- Refer to Work section from w3schools for this template -->
+<div class="w3-container" style="padding:128px 16px" id="dept">
+  <h3 class="w3-center">DEPARTMENTS</h3>
+  <p class="w3-center w3-large">What we are made of </p>
+
+
+<div class="w3-row" style="margin-top:64px">
+    <div class="w3-col l3 m3">
+      <img src="Images/hr.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Human Resources">
+      <div class="caption"><center><h2>Human Resources</h2></center></div>
+  </div>
+  <div class="w3-col l3 m3">
+      <img src="Images/sales.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sales">
+      <div class="caption"><center><h2>Sales</h2></center></div>
+  </div>
+  <div class="w3-col l3 m3">
+      <img src="Images/tech.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Technical">
+      <div class="caption"><center><h2>Technical</h2></center></div>
+    </div>
+    <div class="w3-col l3 m3">
+      <img src="Images/design.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Design">
+         <div class="caption"><center><h2>Design</h2></center></div>
+
+    </div>
+  </div>
+
+<div class="w3-row" style="margin-top:64px">
+    <div class="w3-col l3 m3">
+      <img src="Images/marketing.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Marketing">
+         <div class="caption"><center><h2>Marketing</h2></center></div>
+  </div>
+  <div class="w3-col l3 m3">
+      <img src="Images/support.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sales">
+         <div class="caption"><center><h2>Customer Support</h2></center></div>
+  </div>
+  <div class="w3-col l3 m3">
+      <img src="Images/security.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Security">
+         <div class="caption"><center><h2>Security</h2></center></div>
+    </div>
+    <div class="w3-col l3 m3">
+      <img src="Images/legal.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Legal">
+         <div class="caption"><center><h2>Legal</h2></center></div>
+  </div>
+</div>
 
 
 <!-- Modal for full size images on click-->
@@ -219,7 +288,17 @@ body, html {
   </div>
 </div>
 
-<!-- Skills Section -->
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- 
 <div class="w3-container w3-light-grey w3-padding-64">
   <div class="w3-row-padding">
     <div class="w3-col m6">
@@ -244,8 +323,8 @@ body, html {
       </div>
     </div>
   </div>
-</div>
-
+</div> 
+ -->
 
 
 <!-- Team Section -->
@@ -255,10 +334,10 @@ body, html {
   <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team2.jpg" alt="Ananth Koppar" style="width:100%">
+        <!-- <img src="/w3images/team2.jpg" alt="Ananth Koppar" style="width:100%"> -->
         <div class="w3-container">
           <h3>Ananth Koppar</h3>
-          <p class="w3-opacity">KM Expert</p>
+          <p class="w3-opacity">KM Experts</p>
           
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
@@ -266,10 +345,10 @@ body, html {
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team1.jpg" alt="Mamtha Shetty" style="width:100%">
+        <!-- <img src="/w3images/team1.jpg" alt="Mamatha Shetty" style="width:100%"> -->
         <div class="w3-container">
           <h3>Mamtha Shetty</h3>
-          <p class="w3-opacity">KM Expert</p>
+          <p class="w3-opacity">KM Experts</p>
 
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
@@ -277,7 +356,7 @@ body, html {
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team3.jpg" alt="Poorva Tiwari" style="width:100%">
+        <!-- <img src="/w3images/team3.jpg" alt="Poorva Tiwari" style="width:100%"> -->
         <div class="w3-container">
           <h3>Poorva Tiwari</h3>
           <p class="w3-opacity">Web Designer</p>
@@ -288,7 +367,7 @@ body, html {
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team4.jpg" alt="Pragna Prasanna" style="width:100%">
+        <!-- <img src="/w3images/team4.jpg" alt="Pragna Prasanna" style="width:100%"> -->
         <div class="w3-container">
           <h3>Pragna Prasanna</h3>
           <p class="w3-opacity">Product Designer</p>
@@ -302,8 +381,8 @@ body, html {
   <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team2.jpg" alt="Priya Nayak" style="width:100%">
-        <div class="w3-container">
+        <!-- <img src="/w3images/team2.jpg" alt="Priya Nayak" style="width:100%">
+         --><div class="w3-container">
           <h3>Priya Nayak</h3>
           <p class="w3-opacity">Backend Developer</p>
           
@@ -313,8 +392,8 @@ body, html {
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team1.jpg" alt="Preeti Agrawal" style="width:100%">
-        <div class="w3-container">
+        <!-- <img src="/w3images/team1.jpg" alt="Preeti Agrawal" style="width:100%">
+         --><div class="w3-container">
           <h3>Preeti Agrawal</h3>
           <p class="w3-opacity">Product Designer</p>
           
@@ -324,9 +403,9 @@ body, html {
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team3.jpg" alt="Rachana P R Aithal" style="width:100%">
-        <div class="w3-container">
-          <h3>Rachana P R Aithal</h3>
+        <!-- <img src="/w3images/team3.jpg" alt="Rachana Aithal" style="width:100%">
+         --><div class="w3-container">
+          <h3>Rachana Aithal</h3>
           <p class="w3-opacity">Web Designer</p>
           
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
@@ -335,8 +414,8 @@ body, html {
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team4.jpg" alt="Rhythm Girdhar" style="width:100%">
-        <div class="w3-container">
+        <!-- <img src="/w3images/team4.jpg" alt="Rhythm Girdhar" style="width:100%">
+         --><div class="w3-container">
           <h3>Rhythm Girdhar</h3>
           <p class="w3-opacity">Web Designer</p>
           
@@ -389,8 +468,6 @@ body, html {
 </footer>
  
 <script>
-
-
 </script>
 
 </body>
