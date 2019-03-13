@@ -1,215 +1,437 @@
 <!DOCTYPE html>
+
 <html>
+
 <title>Farm App</title>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
+
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
+
+
 body, html {
+
   height: 100%;
+
   line-height: 1.8;
 
+
+
 }
+
+
 
 .grey-background{
-  background-color: #76987B; 
+
+  background-color: #76987B;
+
+
 
 }
+
+
 
 .w3-bar .w3-button {
+
   padding: 16px;
+
 }
+
 </style>
+
 <body>
 
+
+
 <!-- Navbar (sit on top) -->
+
 <div class="w3-top">
+
   <div class="w3-bar w3-white w3-card" id="myNavbar">
+
     <a href="landing.html#home" class="w3-bar-item w3-button w3-wide"><img class="w3-image w3-round-large" src="Images/logo.jpeg" alt="LOGO" width="100" height="80"></a>
+
     <!-- Right-sided navbar links -->
+
     <div class="w3-right w3-hide-small">
+
       <a href="landing.html#about" class="w3-bar-item w3-button">ABOUT</a>
+
       <a href="landing.html#iot" class="w3-bar-item w3-button"><i class="fa fa-cogs"></i> IoT</a>
+
       <a href="landing.html#products" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PRODUCTS</a>
+
       <a href="landing.html#dept" class="w3-bar-item w3-button"><i class="fa fa-th"></i> DEPARTMEMTS</a>
+
       <a href="landing.html#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+
       <a href="experts.html" class="w3-bar-item w3-button"></i> EXPERTS</a>
-      <a href="" class="w3-bar-item w3-button">LOG IN</a> 
+
+      <a href="" class="w3-bar-item w3-button">LOG IN</a>
+
     </div>
+
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
+
+
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+
       <i class="fa fa-bars"></i>
+
     </a>
+
   </div>
+
 </div>
 
+
+
 <!-- Sidebar on small screens when clicking the menu icon -->
+
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+
   <a href="landing.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+
   <a href="landing.html#iot" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-cogs"></i>IoT</a>
+
   <a href="landing.html#products" onclick="w3_close()" class="w3-bar-item w3-button">PRODUCTS</a>
+
   <a href="landing.html#dept" onclick="w3_close()" class="w3-bar-item w3-button">DEPARTMENTS</a>
+
   <a href="landing.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+
 </nav>
 
 
 
 
 
+
+
+
+
+
+
 <!-- Product 1 -->
+
 <div class="bgimg-1 w3-display-container w3-grayscale-min" id="p1">
+
   <div class="w3-container " style="padding:100px 16px">
-    <img style="margin-left:500px;" src="Images/farm.png">
+
+    <!--<img style="margin-left:500px;" src="Images/farm.png">-->
+    <center><img src="Images/farm.png" style="width:20%"></center>
     <div class="w3-container w3-light-grey">
+
       <p style="text-align:center;margin-right:100px;margin-left:100px;padding-right:60px">We are business intelligence for agriculture business and farmers.
+
          We integrate m2m solutions, mobile application and big data tools
+
          to monitor and keep on track all the different factors affecting
+
          crops such as: pests, unbalanced soil, extreme weather conditions
+
           and agrochemicals abuse.</p>
+
     </div><br><br>
+
     <div>
+
     <h2 style="text-align:center">Description</h2>
+
     <hr style="margin-left:480px;margin-right:480px;border-width: 2px;">
+
     <h6 style="margin-top:80px;margin-right:100px;margin-left:300px;font-weight:bold;">MONITORING</h6>
+
     <p style="margin-right:500px;margin-left:100px;padding-right:150px">Simplify the process of monitoring pests, diseases and beneficials with
+
       our easy to use mobile applications. Recording the data is easy and more
+
        efficient than using traditional methods such as paper.</p>
+
     <p style="margin-right:500px;margin-left:100px;padding-right:150px"> The following metrics can be immediately observed:<br>
+
       <ul>
+
     <li style="margin-right:500px;margin-left:100px;padding-right:150px">Satelite map with the recorded points. Allows you to get an overview of the current sanitary status of the farm.</li>
+
     <li style="margin-right:500px;margin-left:100px;padding-right:150px">Comparative heatmaps to easily compare previous measures with the current status</li>
+
     <li style="margin-right:500px;margin-left:100px;padding-right:150px">Charts and reports with the INCIDENCE and SEVERITY of pests and diseases</li>
+
   </ul>
+
     </p>
 
+
+
   </div>
+
   <div>
-    <img src="Images/p1.png" width="200" height="300" style="margin-left:900px;margin-top:-350px;">
+
+    <img src="Images/p1.png" width="200" height="300" style="margin-left:900px;margin-top:-350px;" onClick="onClick(this)">
+    <!--<img src="Images/p1.png" style="width:10%; margin-left: 60%; margin-top: 5%" onclick="onClick(this)">-->
+
     </div>
 
+
+
     <div>
+
     <h6 style="margin-top:80px;margin-right:100px;margin-left:220px;font-weight:bold;">SENSORS and WEATHER STATIONS</h6>
+
     <p style="margin-right:500px;margin-left:100px;padding-right:150px">Farmapp offers weather forecasts based on satellite images and proprietary algorithms.</p>
+
     <p style="margin-right:500px;margin-left:100px;padding-right:150px">Soil sensors and weather stations to capture real time data:<br>
+
       <ul>
+
     <li style="margin-right:500px;margin-left:100px;padding-right:150px">Sensors installed in the field capturing and transmitting real-time metrics such as soil moisture, relative humidity, air & soil temperature, radiation.</li>
+
     <li style="margin-right:500px;margin-left:100px;padding-right:150px">Receive real-time alerts based on weather conditions and its relation to pests & diseases</li>
+
     </ul>
+
     </p>
 
+
+
   </div>
+
   <div>
-    <img src="Images/p12.png" width="400" height="200" style="margin-left:800px;margin-top:-350px;">
+
+    <img src="Images/p12.png" width="400" height="200" style="margin-left:800px;margin-top:-350px;" onclick="onClick(this)">
+    <!--<img src="Images/p12.png" style="width:40%" onclick="onClick(this)">-->
+
     </div>
 
+
+
     <div>
+
     <h6 style="margin-top:80px;margin-right:100px;margin-left:220px;font-weight:bold;">SPRAYING ( FUMIGATION )</h6>
+
     <p style="margin-right:500px;margin-left:100px;padding-right:150px">Allows for tracking the routes and speed of movement of the sprayer in order to optimize the quantity of the product supplied and to control the application of agrochemicals and fertilizers in the field.</p>
+
     <p style="margin-right:500px;margin-left:100px;padding-right:150px">This module significantly reduces the use of agrochemicals and fertilizers in the crop.</p>
 
+
+
   </div>
+
   <div>
-    <img src="Images/p13.png" width="400" height="200" style="margin-left:800px;margin-top:-270px;">
+
+    <img src="Images/p13.png" width="400" height="200" style="margin-left:800px;margin-top:-270px;" onclick="onClick(this)">
+    <!--<img src="Images/p13.png" style="width:40%" onclick="onClick(this)">-->
+
   </div><br>
 
+
+
     <div>
+
       <h2 style="text-align:center">Benefits</h2>
+
       <hr style="margin-left:500px;margin-right:500px;border-width: 2px;">
+
     </div>
-    <div style="background-color: lightgrey;width: 300px;border: 2px;padding: 25px;margin: 25px;margin-left:130px;">COST OF PESTICIDES AND BIOLOGICAL CONTROL<br>
+
+    <div style="background-color: lightgrey;width: 300px;border: 2px;padding: 25px;margin: 25px;margin-left:150px;">COST OF PESTICIDES AND BIOLOGICAL CONTROL<br>
+
       <p>Save money with precision spraying and targeted release of natural enemies</p>
+
     </div>
-    <div style="background-color: lightgrey;width: 300px;border: 2px;padding: 25px;margin: 25px;margin-left:490px;margin-top:-240px;">TIME BETWEEN MONITORING AND ACTION CONTROL<br>
+
+    <div style="background-color: lightgrey;width: 300px;border: 2px;padding: 25px;margin: 25px;margin-left:507px;margin-top:-240px;">TIME BETWEEN MONITORING AND ACTION CONTROL<br>
+
       <p>Digitising the monitoring process allows you take actions on time. Forget about pen and paper</p>
+
     </div>
-    <div style="background-color: lightgrey;width: 300px;border: 2px;padding: 25px;margin: 25px;margin-left:840px;margin-top:-240px;">WHEN, WHERE AND HOW TO SPRAY<br>
+
+    <div style="background-color: lightgrey;width: 300px;border: 2px;padding: 25px;margin: 25px;margin-left:870px;margin-top:-240px;">WHEN, WHERE AND HOW TO SPRAY<br>
+
       <p>Our geo-referenced modules help you understand how and where the chemicals are applied</p>
+
     </div>
+
   </div>
+  <div>
+    <h3 style="text-align:center;"> Buy this for?</h3>
+    <hr style="margin-left:480px;margin-right:480px;border-width: 2px;">
+    <h4 style="text-align:center;">6000.00/-</h4>
+  </div>
+
 </div>
 
+
+
 <!-- Modal for full size images on click-->
+
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+
   <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+
     <img id="img01" class="w3-image">
+
     <p id="caption" class="w3-opacity w3-large"></p>
+
   </div>
+
 </div>
+
+
+
+
 
 
 
 <!-- Contact Section -->
+
 <div class="w3-container w3-light-grey" style="padding:100px 16px" id="contact">
+
   <h3 class="w3-center">CONTACT</h3>
+
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+
   <div style="margin-top:48px">
+
     <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+
     <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+
     <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+
     <br>
+
     <form action="/action_page.php" target="_blank">
+
       <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+
       <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+
       <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+
       <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+
       <p>
+
         <button class="w3-button w3-black" type="submit">
+
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
+
         </button>
+
       </p>
+
     </form>
-    
+
+
+
   </div>
+
 </div>
+
+
+
+
+
 
 
 
 
 <!-- Footer -->
+
 <footer class="w3-center w3-black w3-padding-64">
+
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
   <div class="w3-xlarge w3-section">
+
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
+
     <i class="fa fa-instagram w3-hover-opacity"></i>
+
     <i class="fa fa-snapchat w3-hover-opacity"></i>
+
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+
     <i class="fa fa-twitter w3-hover-opacity"></i>
+
     <i class="fa fa-linkedin w3-hover-opacity"></i>
+
   </div>
 
+
+
 </footer>
- 
+
+
+
 <script>
+
 // Modal Image Gallery
+
   function onClick(element) {
+
     document.getElementById("img01").src = element.src;
+
     document.getElementById("modal01").style.display = "block";
+
     // var captionText = document.getElementById("caption");
+
     // captionText.innerHTML = element.alt;
+
   }
+
+
 
   function w3_open() {
+
       if (mySidebar.style.display === 'block') {
+
       mySidebar.style.display = 'none';
+
       } else {
+
       mySidebar.style.display = 'block';
+
       }
+
   }
+
+
 
   // Close the sidebar with the close button
+
   function w3_close() {
+
       mySidebar.style.display = "none";
+
   }
+
 </script>
 
+
+
 </body>
+
 </html>
