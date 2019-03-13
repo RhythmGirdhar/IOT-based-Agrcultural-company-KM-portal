@@ -1,53 +1,77 @@
 <!DOCTYPE html>
-
 <html>
-
-<title>Pycno</title>
-
+<title>IoT in Agriculture</title>
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+<link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <style>
-
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
-
-
 body, html {
-
   height: 100%;
-
   line-height: 1.8;
-
-
-
 }
-
-
-
 .grey-background{
-
   background-color: #76987B;
-
-
-
 }
 
+.pr_column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
 
-
+/* Clearfix (clear floats) */
+.pr_row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 
 .w3-bar .w3-button {
-
   padding: 16px;
+}
 
+
+.accordion {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: black;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+  color:black;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 </style>
@@ -57,47 +81,27 @@ body, html {
 
 
 <!-- Navbar (sit on top) -->
-
 <div class="w3-top">
-
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-
     <a href="landing.html#home" class="w3-bar-item w3-button w3-wide"><img class="w3-image w3-round-large" src="Images/logo.jpeg" alt="LOGO" width="100" height="80"></a>
-
     <!-- Right-sided navbar links -->
-
     <div class="w3-right w3-hide-small">
-
-      <a href="landing.html#about" class="w3-bar-item w3-button">ABOUT</a>
-
+      <a href="experts.html" class="w3-bar-item w3-button"><i class="fa fa-edit"></i> EXPERTS</a>
+      <a href="landing.html#about" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> ABOUT</a>
       <a href="landing.html#iot" class="w3-bar-item w3-button"><i class="fa fa-cogs"></i> IoT</a>
-
       <a href="landing.html#products" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PRODUCTS</a>
-
-      <a href="landing.html#dept" class="w3-bar-item w3-button"><i class="fa fa-th"></i> DEPARTMEMTS</a>
-
+      <a href="landing.html#dept" class="w3-bar-item w3-button"><i class="fa fa-building"></i> DEPARTMEMTS</a>
       <a href="landing.html#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-
+      <a href="#faq" class="w3-bar-item w3-button"><i class="fa fa-comment"></i> FAQs</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-
-      <a href="experts.html" class="w3-bar-item w3-button"></i> EXPERTS</a>
-
-      <a href="" class="w3-bar-item w3-button">LOG IN</a>
-
+      <a href="login.html" class="w3-bar-item w3-button"><i class="fa fa-key"></i> LOG IN</a> 
     </div>
-
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-
-
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-
       <i class="fa fa-bars"></i>
-
     </a>
-
   </div>
-
 </div>
 
 
@@ -279,51 +283,6 @@ body, html {
 
 </div><br>
 
-<!-- Contact Section -->
-
-<div class="w3-container w3-light-grey" style="padding:100px 16px" id="contact">
-
-  <h3 class="w3-center">CONTACT</h3>
-
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-
-  <div style="margin-top:48px">
-
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-
-    <br>
-
-    <form action="/action_page.php" target="_blank">
-
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-
-      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-
-      <p>
-
-        <button class="w3-button w3-black" type="submit">
-
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-
-        </button>
-
-      </p>
-
-    </form>
-
-
-
-  </div>
-
-</div>
 
 
 
@@ -346,6 +305,67 @@ body, html {
 
 
 
+<!--FAQs-->
+
+  <div class="w3-container w3-light-grey" style="padding:100px 50px" id="faq">
+      <center><h3 >Frequently Asked Questions </h3></center><br>
+
+      <button class="accordion">What risks and challenges should be considered in the Internet of Everything?</button>
+    <div class="panel">
+        <p>Some important considerations in the Internet of Everything include privacy, security, energy consumption and network congestion. The given products are less affected by these constraints. </p>
+    </div>
+
+    <button class="accordion">How can I know more about the products? </button>
+    <div class="panel">
+        <p>You can know about various products right from our website. Simply click on the 'View our products' to view them in detail and get to know more about them. </p>
+    </div>
+
+    <button class="accordion">Do you offer any discount?</button>
+    <div class="panel">
+        <p>Our pricing is based on a long term relationship aimed at giving maximum benefits to our customers.</p>
+    </div>
+    <button class="accordion">How do I contact you? </button>
+    <div class="panel">
+        <p>You can connect to us on our 24 hour service using the e-mail or the given customer-care number present on the website. </p>
+    </div>
+
+    <button class="accordion">Do we need internet connectivity?</button>
+    <div class="panel">
+        <p>Yes. Our products- FarmApp, Pycno and Cowlar require elastic internet connectivity for their working. </p>
+    </div>
+
+
+</div>
+<!--End of FAQs-->
+
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:100px 50px 0px 50px; " id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Bangalore, India</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +80 22446688</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@smartfarmer.com</p>
+    <br>
+    <form action="" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    
+  </div>
+</div>
+
+
+
 
 
 
@@ -353,7 +373,7 @@ body, html {
 
 <footer class="w3-center w3-black w3-padding-64">
 
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 
   <div class="w3-xlarge w3-section">
 
@@ -377,50 +397,31 @@ body, html {
 
 
 
+
+
+
+
 <script>
-
   function onClick(element) {
-
     document.getElementById("img01").src = element.src;
-
     document.getElementById("modal01").style.display = "block";
-
     // var captionText = document.getElementById("caption");
-
     // captionText.innerHTML = element.alt;
-
   }
-
-
-
   function w3_open() {
-
       if (mySidebar.style.display === 'block') {
-
       mySidebar.style.display = 'none';
-
       } else {
-
       mySidebar.style.display = 'block';
-
       }
-
   }
-
-
-
   // Close the sidebar with the close button
-
   function w3_close() {
-
       mySidebar.style.display = "none";
-
   }
-
 </script>
 
 
 
 </body>
-
 </html>
