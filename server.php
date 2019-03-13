@@ -56,12 +56,12 @@ if (isset($_POST['reg_user'])) {
   
   if (count($errors) == 0) {
   	$password = md5($password_1);
-  	$query = "INSERT INTO users (name, email, phonenum, area, username, password) 
-  			  VALUES('$name', '$email', '$phone', '$area', '$username', '$password')";
+  	$query = "INSERT INTO users (name, email, phonenum, area, username, password, role) 
+  			  VALUES('$name', '$email', '$phone', '$area', '$username', '$password', 'enduser')";
   	mysqli_query($db, $query);
   	$_SESSION['username'] = $username;
   	$_SESSION['success'] = "You are now logged in";
-  	header('location: landing.html');
+  	header('location: landing.php');
   }
 }
 
