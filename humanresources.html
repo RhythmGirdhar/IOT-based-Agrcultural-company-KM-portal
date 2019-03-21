@@ -112,14 +112,15 @@ body, html {
 	<a href="#home" class="w3-bar-item w3-button w3-wide"><img class="w3-image w3-round-large" src="Images/logo.jpeg" alt="LOGO" width="100" height="80"></a>
 	<!-- Right-sided navbar links -->
 	<div class="w3-right w3-hide-small">
-	  <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+	  <a href="experts.php" class="w3-bar-item w3-button" id="experts"><i class="fa fa-edit"></i> EXPERTS</a>
+	  <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> ABOUT</a>
 	  <a href="#iot" class="w3-bar-item w3-button"><i class="fa fa-cogs"></i> IoT</a>
 	  <a href="#products" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PRODUCTS</a>
-	  <a href="#dept" class="w3-bar-item w3-button"><i class="fa fa-th"></i> DEPARTMEMTS</a>
+	  <a href="#dept" class="w3-bar-item w3-button"><i class="fa fa-building"></i> DEPARTMENTS</a>
 	  <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+	  <a href="#faq" class="w3-bar-item w3-button"><i class="fa fa-comment"></i> FAQs</a>
 	  <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-	  <a href="#faq" class="w3-bar-item w3-button"><span id="faqs">FAQs</span></a>
-	  <a href="login.html" class="w3-bar-item w3-button"><span id="log">LOG IN</span></a> 
+	  <a href="login.html" class="w3-bar-item w3-button" id="log"><i class="fa fa-key"></i> LOG IN</a> 
 	</div>
 	<!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -208,7 +209,7 @@ There is an increasing problem in developing countries; they are considered the 
 		var paratext = $("#"+selected).next();
 		paratext.html(paratext.html() + text);
 		$("#addtext").val('');
-		$("#success").html("Text Added Successfully! Please");
+		$("#success").html("Text Added Successfully! Please ");
 		return false;
 	});
 </script>
