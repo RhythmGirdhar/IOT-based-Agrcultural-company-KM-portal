@@ -301,7 +301,7 @@ body, html {
 
 <div class="w3-row" style="margin-top:64px">
   <div class="w3-col l3 m3">
-	<a href="marketing.php"<img src="Images/marketing.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Marketing"></a>
+	<a href="marketing.php"><img src="Images/marketing.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Marketing"></a>
 	 <div class="caption"><center><h2>Marketing</h2></center></div>
   </div>
   <div class="w3-col l3 m3">
