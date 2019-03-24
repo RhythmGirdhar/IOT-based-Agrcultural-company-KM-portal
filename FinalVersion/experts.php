@@ -14,8 +14,8 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<link rel="stylesheet" href="form.css" >
-	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" href="css/form.css" >
+	<link rel="stylesheet" href="css/w3.css">
 	<style>
 	.w3-bar .w3-button {
 	padding: 16px;
