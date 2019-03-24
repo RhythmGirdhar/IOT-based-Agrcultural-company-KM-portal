@@ -281,19 +281,19 @@ body, html {
 
 <div class="w3-row" style="margin-top:64px">
   <div class="w3-col l3 m3">
-	<img src="Images/hr.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Human Resources">
+	<a href="humanresources.php"><img src="Images/hr.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Human Resources"></a>
 	<div class="caption"><center><h2>Human Resources</h2></center></div>
   </div>
   <div class="w3-col l3 m3">
-	<img src="Images/sales.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sales">
+	<a href="sales.php"><img src="Images/sales.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sales"></a>
 	<div class="caption"><center><h2>Sales</h2></center></div>
   </div>
   <div class="w3-col l3 m3">
-	<img src="Images/tech.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Technical">
+	<a href="technical.php"><img src="Images/tech.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Technical"></a>
 	<div class="caption"><center><h2>Technical</h2></center></div>
   </div>
   <div class="w3-col l3 m3">
-	<img src="Images/design.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Design">
+	<a href="design.php"><img src="Images/design.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Design"></a>
 	 <div class="caption"><center><h2>Design</h2></center></div>
 
   </div>
@@ -301,19 +301,19 @@ body, html {
 
 <div class="w3-row" style="margin-top:64px">
   <div class="w3-col l3 m3">
-	<img src="Images/marketing.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Marketing">
+	<a href="marketing.php"<img src="Images/marketing.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Marketing"></a>
 	 <div class="caption"><center><h2>Marketing</h2></center></div>
   </div>
   <div class="w3-col l3 m3">
-	<img src="Images/support.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sales">
+	<a href="customer.php"><img src="Images/support.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sales"></a>
 	 <div class="caption"><center><h2>Customer Support</h2></center></div>
   </div>
   <div class="w3-col l3 m3">
-	<img src="Images/security.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Security">
+	<a href="security.php"><img src="Images/security.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Security"></a>
 	 <div class="caption"><center><h2>Security</h2></center></div>
   </div>
   <div class="w3-col l3 m3">
-	<img src="Images/legal.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Legal">
+	<a href="legal.php"><img src="Images/legal.png" style="width:50%;margin-left: 25%" onclick="onClick(this)" class="w3-hover-opacity" alt="Legal"></a>
 	 <div class="caption"><center><h2>Legal</h2></center></div>
   </div>
 </div>
